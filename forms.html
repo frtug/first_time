@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <script>
+        // This is JS area and here we can write Javascript
+        function handleSubmit(event){
+            event.preventDefault()
+            console.log(event)
+        }
+
+    </script>
+</head>
+<body>
+
+    <form action='main.php' method="post">
+        <label for="firstname">First Name</label>
+        <input  id="firstname" name="firstname" type="text"  /> 
+
+        <br/> 
+        <br/> 
+
+        <label for="lastname">Last Name</label>
+        <input  id="lastname" name="lastname" type="text"  />
+
+        <br/> 
+        <br/> 
+
+        <label for="age">Age: </label>
+        <input  id="age" type="number" name="age" />
+        <br/> 
+        <br/> 
+
+        <label for="join-date">Join Date: </label>
+        <input id="join-date" type="date" name="join_date"> 
+
+        <br/>
+        <label for="portfolio"></label>
+        <input id="portfolio" name="portfolio" type="file" />
+
+        
+        <input type="submit" />  
+        <!-- button with the label of the button submit -->
+    </form>
+    <form onsubmit=handleSubmit(event)>
+        <fieldset>
+            <legend>Login</legend>
+            <label for="name">Name</label>
+            <input  id="name" name="name" type="text"  /> 
+
+            <br/> 
+            <br/> 
+
+            <label for="pass">Password:</label>
+            <input id="pass" name="name" type="password" />
+<br/>
+            <label>Hobbies:</label>
+            <br/>
+
+            <label for="games">Computer Games</label>
+            <input type="checkbox" id="games" name="hobbies" />
+            <br/>
+            <label for="cooking">Cooking</label>
+            <input type="checkbox" id="cooking" name="hobbies"/>
+            <br/>
+
+            <label for="sports">Sports</label>
+            <input type="checkbox" id="sports" name="hobbies"/>
+            <br/>
+
+
+            <br/>
+            <label>Gender :</label>
+            <br/>
+
+            <label for="male">Male </label>
+            <input type="radio" id="male" name="gender" />
+            <br/>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender"/>
+            <br/>
+
+            <label for="Others">Others</label>
+            <input type="tel" id="others" name="gender"/>
+            <br/>
+
+            <!-- 
+            Name 
+            Age 
+            Email
+            Phone
+            Password
+            confirm password
+            Gender Male or female 
+
+            Are Your working   Yes or no  
+
+            Submit button
+
+            
+            
+            -->
+
+            
+            <input type="submit" />  
+        </fieldset>
+        
+        <!-- button with the label of the button submit -->
+    </form>  
+    
+</body>
+</html>
