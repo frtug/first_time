@@ -17,13 +17,13 @@
 
     <form action='main.php' method="post">
         <label for="firstname">First Name</label>
-        <input  id="firstname" name="firstname" type="text"  /> 
+        <input  id="firstname" name="firstname" type="text" placeholder="Enter Your first name"  /> 
 
         <br/> 
         <br/> 
 
         <label for="lastname">Last Name</label>
-        <input  id="lastname" name="lastname" type="text"  />
+        <input  id="lastname" name="lastname" type="text" placeholder="Enter Your Last name"   />
 
         <br/> 
         <br/> 
@@ -46,24 +46,24 @@
     </form>
     <form onsubmit=handleSubmit(event)>
         <fieldset>
-            <legend>Login</legend>
+            <!-- <legend>Login</legend>
             <label for="name">Name</label>
-            <input  id="name" name="name" type="text"  /> 
+            <input  id="name" name="name" type="text" required  /> 
 
             <br/> 
             <br/> 
 
             <label for="pass">Password:</label>
-            <input id="pass" name="name" type="password" />
+            <input id="pass" name="name" type="password" required /> -->
 <br/>
             <label>Hobbies:</label>
             <br/>
 
-            <label for="games">Computer Games</label>
+            <label for="games" >Computer Games</label>
             <input type="checkbox" id="games" name="hobbies" />
             <br/>
             <label for="cooking">Cooking</label>
-            <input type="checkbox" id="cooking" name="hobbies"/>
+            <input type="checkbox" id="cooking" name="hobbies" />
             <br/>
 
             <label for="sports">Sports</label>
@@ -85,7 +85,41 @@
             <label for="Others">Others</label>
             <input type="tel" id="others" name="gender"/>
             <br/>
+            <br/>
 
+            <br/>
+
+<!--             
+            <label for="fun">Range</label>
+            <input type="range" id="fun" name="fun" value="0"  required
+            min="0" max="50" 
+            onInput="this.form.change_input.value = this.value" />
+
+            <input type="number" min="0" max="50"  name="change_input"
+             value="0" onInput="this.form.fun.value = this.value" >
+            <br/>
+        -->
+             <label for="fav" >Select You Food: </label>
+            <select id="fav"  required>
+                <option value="" disabled selected> Select option:</option>
+                <option value="Biryani / Pulao">
+                    Biryani / Pulao
+                </option> 
+                <option value="Icecream">
+                    Icecream
+                </option> 
+                <option value="Butter">
+                    Butter
+                </option>            
+            </select>
+
+            <!-- <button >Signup</button>
+            <input type="button" onclick="alert('Clicked Button')" value="Login Button" />
+            <input type="reset" />
+            <br/>
+            <textarea disabled rows="3" cols="10" placeholder="Here write a description of yourself"></textarea>
+             -->
+            <!-- <output value="0" name="out">0</output> -->
             <!-- 
             Name 
             Age 
@@ -103,11 +137,34 @@
             
             -->
 
-            
+            <br/>
             <input type="submit" />  
         </fieldset>
         
         <!-- button with the label of the button submit -->
+
+
+        <!--  Create a webpage
+          table format 
+        a
+        relative, 
+        absolute           <a href=""> 
+        br                      
+        mark 
+        img 
+        video 
+        iframe 
+        audio
+
+
+        form, table implement every thing input which we discussed, select  
+
+
+         
+        
+        
+        
+        -->
     </form>  
     
 </body>
